@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://di84pwn5n6vrk"]
+
+[ext_resource type="Texture2D" uid="uid://drh3wharmkh4t" path="res://assets/images/Wood_Bridge.png" id="1_0yo0s"]
+
+[node name="4WideHBridge" type="Node2D"]
+
+[node name="BridgeLeft" type="Sprite2D" parent="."]
+texture = ExtResource("1_0yo0s")
+region_enabled = true
+region_rect = Rect2(32, 0, 16, 16)
+
+[node name="BridgeCenter" type="Sprite2D" parent="."]
+position = Vector2(16, 0)
+texture = ExtResource("1_0yo0s")
+region_enabled = true
+region_rect = Rect2(48, 0, 16, 16)
+
+[node name="BridgeCenter2" type="Sprite2D" parent="."]
+position = Vector2(32, 0)
+texture = ExtResource("1_0yo0s")
+region_enabled = true
+region_rect = Rect2(48, 0, 16, 16)
+
+[node name="BridgeRight" type="Sprite2D" parent="."]
+position = Vector2(48, 0)
+texture = ExtResource("1_0yo0s")
+region_enabled = true
+region_rect = Rect2(64, 0, 16, 16)
+
+[node name="NavigationLink2D" type="NavigationLink2D" parent="."]
+start_position = Vector2(60, 0)
+end_position = Vector2(-12, 0)
+enter_cost = 5.0
