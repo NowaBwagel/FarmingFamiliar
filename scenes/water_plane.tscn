@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch5u02n8bwtth"]
+
+[ext_resource type="Texture2D" uid="uid://d2lisqbi6jw0n" path="res://assets/resources/animted_water_texture.res" id="1_l08gf"]
+
+[node name="WaterPlane" type="Node2D"]
+
+[node name="AnimtedWaterTexture" type="Sprite2D" parent="."]
+texture = ExtResource("1_l08gf")
+region_enabled = true
+region_rect = Rect2(0, 0, 1920, 1080)

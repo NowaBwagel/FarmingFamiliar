@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4bf4nh5i4530"]
+
+[ext_resource type="Material" uid="uid://cbk7n4ierh0w0" path="res://assets/resources/materials/sway_material.tres" id="1_wwylg"]
+[ext_resource type="Texture2D" uid="uid://dlwte04xem686" path="res://assets/images/GrassSprite.png" id="2_gortk"]
+[ext_resource type="PackedScene" uid="uid://c4qcd3ker60rn" path="res://scenes/nodes/plant_pusher.tscn" id="3_3dnjn"]
+
+[node name="Grass" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("1_wwylg")
+position = Vector2(0, -8)
+texture = ExtResource("2_gortk")
+
+[node name="Area2D" parent="." instance=ExtResource("3_3dnjn")]
+
+[node name="PlantPusher" parent="Area2D" index="1" node_paths=PackedStringArray("sprite")]
+sprite = NodePath("../../Sprite2D")
+
+[editable path="Area2D"]

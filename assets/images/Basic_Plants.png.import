@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdt0ntje6cke2"
-path="res://.godot/imported/Tilled_Dirt.png-7ce524e6811acb36b262fdea8d925c1f.ctex"
+uid="uid://dytm045kjjxtx"
+path="res://.godot/imported/Basic_Plants.png-c48db309ec16bd71de698ee96c4e21f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilled_Dirt.png"
-dest_files=["res://.godot/imported/Tilled_Dirt.png-7ce524e6811acb36b262fdea8d925c1f.ctex"]
+source_file="res://assets/images/Basic_Plants.png"
+dest_files=["res://.godot/imported/Basic_Plants.png-c48db309ec16bd71de698ee96c4e21f4.ctex"]
 
 [params]
 
