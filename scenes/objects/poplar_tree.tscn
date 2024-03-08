@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://brsuccv6f13ug"]
+[gd_scene load_steps=12 format=3 uid="uid://brsuccv6f13ug"]
 
 [ext_resource type="Texture2D" uid="uid://cn4i1yw4lc34e" path="res://assets/images/Basic_Grass_Biom_things.png" id="1_1wndj"]
 [ext_resource type="Script" path="res://scripts/poplar_tree.gd" id="1_i10fn"]
@@ -9,6 +9,35 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u8im0"]
 radius = 8.0
+
+[sub_resource type="Curve" id="Curve_bjbs5"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_0opbc"]
+curve = SubResource("Curve_bjbs5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j6t72"]
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(0, -16, 0)
+emission_shape = 1
+emission_sphere_radius = 1.0
+angle_min = -90.0
+angle_max = 90.0
+direction = Vector3(0, -15, 0)
+spread = 135.0
+initial_velocity_min = 100.0
+initial_velocity_max = 200.0
+angular_velocity_min = -30.0
+angular_velocity_max = 30.0
+gravity = Vector3(0, 98, 0)
+turbulence_enabled = true
+turbulence_initial_displacement_max = 29.8
+turbulence_influence_over_life = SubResource("CurveTexture_0opbc")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpqdf"]
+atlas = ExtResource("1_1wndj")
+region = Rect2(80, 16, 16, 16)
 
 [node name="PoplarTree" type="StaticBody2D"]
 script = ExtResource("1_i10fn")
@@ -29,3 +58,15 @@ max_distance = 360.0
 attenuation = 10.9283
 script = ExtResource("3_tdq8x")
 sounds = Array[AudioStream]([ExtResource("4_06a8i"), ExtResource("6_526dq"), ExtResource("7_5d63w")])
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+y_sort_enabled = true
+emitting = false
+amount = 5
+process_material = SubResource("ParticleProcessMaterial_j6t72")
+texture = SubResource("AtlasTexture_wpqdf")
+one_shot = true
+explosiveness = 0.65
+visibility_rect = Rect2(-50, -50, 100, 75)
+trail_sections = 2
+trail_section_subdivisions = 1

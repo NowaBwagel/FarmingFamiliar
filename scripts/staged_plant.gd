@@ -30,7 +30,6 @@ func _ready():
 	
 	crop_sprite.material = crop_sprite.material.duplicate(true)
 	var offset = float(1.8 * (int(global_position.x) % 4) + 2.5 * (3 - (int(global_position.y) % 4) % 4))
-	print (offset)
 	crop_sprite.material.set_shader_parameter("offset", offset)
 	
 	_plant(seconds_per_step)

@@ -593,6 +593,7 @@ radius = 4.0
 size = Vector2(6, 8)
 
 [node name="PlayerFamiliar" type="CharacterBody2D"]
+z_index = 1
 y_sort_enabled = true
 script = ExtResource("1_a65e8")
 
@@ -603,7 +604,6 @@ current = true
 path_desired_distance = 4.0
 target_desired_distance = 2.0
 avoidance_enabled = true
-debug_enabled = true
 debug_path_custom_color = Color(1, 0.12549, 0.152941, 1)
 
 [node name="MovementSprite2D" type="Sprite2D" parent="."]

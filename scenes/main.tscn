@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://dmnvkp7u4wnte"]
+[gd_scene load_steps=11 format=3 uid="uid://dmnvkp7u4wnte"]
 
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_0j8gr"]
 [ext_resource type="PackedScene" uid="uid://dnwsajce0egc3" path="res://scenes/tile_map.tscn" id="1_d8j1v"]
 [ext_resource type="PackedScene" uid="uid://b3rxt8gwjpb82" path="res://scenes/entity/player_familiar.tscn" id="2_1t0m0"]
 [ext_resource type="PackedScene" uid="uid://doa3dwss0bg03" path="res://scenes/objects/sun_iris.tscn" id="3_bme5o"]
@@ -29,6 +30,7 @@ func _process(delta):
 "
 
 [node name="main" type="Node2D"]
+script = ExtResource("1_0j8gr")
 
 [node name="TileMap" parent="." instance=ExtResource("1_d8j1v")]
 
@@ -198,5 +200,6 @@ position = Vector2(-81, 83)
 
 [node name="WaterPlane" parent="." node_paths=PackedStringArray("node_to_follow") instance=ExtResource("7_b4b7m")]
 z_index = -1
+position = Vector2(8, 0)
 script = SubResource("GDScript_wi75k")
 node_to_follow = NodePath("../Objects/PlayerFamiliar")

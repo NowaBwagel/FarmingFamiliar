@@ -6,25 +6,28 @@
 [ext_resource type="Material" uid="uid://cbk7n4ierh0w0" path="res://assets/resources/materials/sway_material.tres" id="4_evdst"]
 
 [node name="Ruby Globule" type="Node2D" node_paths=PackedStringArray("crop_sprite")]
+z_index = 1
 y_sort_enabled = true
 script = ExtResource("1_y13wd")
 growth_seconds = 600
 crop_sprite = NodePath("BasicPlants")
 
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
+position = Vector2(0, -8)
+avoidance_enabled = false
+radius = 8.0
+
 [node name="BasicPlants" type="Sprite2D" parent="."]
 material = ExtResource("4_evdst")
-position = Vector2(0, -8)
+position = Vector2(0, -14)
 texture = ExtResource("1_iw432")
 region_enabled = true
 region_rect = Rect2(48, 16, 16, 16)
 
 [node name="Area2D" parent="." instance=ExtResource("4_52wgd")]
+position = Vector2(0, -14)
 
 [node name="PlantPusher" parent="Area2D" index="1" node_paths=PackedStringArray("sprite")]
 sprite = NodePath("../../BasicPlants")
-
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
-position = Vector2(0, -8)
-radius = 8.0
 
 [editable path="Area2D"]

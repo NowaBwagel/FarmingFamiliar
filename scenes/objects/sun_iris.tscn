@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c4qcd3ker60rn" path="res://scenes/nodes/plant_pusher.tscn" id="4_iknpp"]
 
 [node name="Sun Iris" type="Node2D" node_paths=PackedStringArray("crop_sprite")]
+z_index = 1
 script = ExtResource("1_87i3b")
 harvest_amount = 5
 crop_sprite = NodePath("BasicPlants")
@@ -13,16 +14,21 @@ crop_sprite = NodePath("BasicPlants")
 [node name="BasicPlants" type="Sprite2D" parent="."]
 y_sort_enabled = true
 material = ExtResource("2_m8ui4")
-position = Vector2(0, -8)
+position = Vector2(0, -12)
 texture = ExtResource("1_ssngt")
 region_enabled = true
 region_rect = Rect2(32, 0, 16, 16)
 
 [node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="."]
 position = Vector2(0, -8)
+avoidance_enabled = false
 radius = 8.0
 
 [node name="Area2D" parent="." instance=ExtResource("4_iknpp")]
+position = Vector2(0, -12)
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(0, 3.875)
 
 [node name="PlantPusher" parent="Area2D" index="1" node_paths=PackedStringArray("sprite")]
 sprite = NodePath("../../BasicPlants")

@@ -1,8 +1,8 @@
-.gradle/
-assetPacks/
-assets/
-build/
-gradle/
-libs/
-res/
-src/
+*.gradle/
+*assetPacks/
+*assets/
+*build/
+*gradle/
+*libs/
+*res/
+*src/

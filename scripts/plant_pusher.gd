@@ -19,6 +19,7 @@ func _ready():
 
 func _body_entered(area: Area2D):
 	entered_area = area
+	sprite.z_index = -1
 	var tween = get_tree().create_tween()
 	#tween.tween_property(poplar_tree_sprite, "modulate", Color.RED, 1).set_trans(Tween.TRANS_SINE)
 	tween.parallel().tween_property(sprite, "scale", Vector2(1,0.25), 0.18).set_trans(Tween.TRANS_BOUNCE)
@@ -27,6 +28,8 @@ func _body_entered(area: Area2D):
 
 func _body_exited(area: Area2D):
 	entered_area = null
+	sprite.z_index = 0
+	if get_tree() == null: return
 	var tween = get_tree().create_tween()
 	#tween.tween_property(poplar_tree_sprite, "modulate", Color.RED, 1).set_trans(Tween.TRANS_SINE)
 	#tween.tween_property(sprite, "scale", Vector2(1,0.2), 0.5).set_trans(Tween.TRANS_BOUNCE)
