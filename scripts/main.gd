@@ -1,10 +1,13 @@
 extends Node2D
 
+@export var player_warehouse: NodePath
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	MobileAds.initialize()
-	_on_load_banner_pressed()
+	
+	#await get_tree().physics_frame
+	#_on_load_banner_pressed()
 
 var _banner_ad_view : AdView
 func destroy_banner_ad_view():

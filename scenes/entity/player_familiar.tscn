@@ -1,8 +1,15 @@
-[gd_scene load_steps=18 format=3 uid="uid://b3rxt8gwjpb82"]
+[gd_scene load_steps=25 format=3 uid="uid://b3rxt8gwjpb82"]
 
 [ext_resource type="Texture2D" uid="uid://cumr1euxsv1wx" path="res://assets/images/Basic Charakter Spritesheet.png" id="1_31bkd"]
 [ext_resource type="Script" path="res://scripts/player_familiar.gd" id="1_a65e8"]
 [ext_resource type="Texture2D" uid="uid://bghliqie8onix" path="res://assets/images/Basic Charakter Actions.png" id="3_52bf2"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_stacked.gd" id="4_on7ey"]
+[ext_resource type="Resource" uid="uid://cd4ugbfb0pf4d" path="res://assets/resources/farming_farmiliar_item_protoset.tres" id="5_efqqm"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="6_3h0h3"]
+[ext_resource type="Script" path="res://addons/gloot/ui/ctrl_inventory_stacked.gd" id="7_6j05k"]
+[ext_resource type="Texture2D" uid="uid://hvsq2bw1eof0" path="res://assets/images/icons/barn.png" id="8_uus6j"]
+[ext_resource type="Texture2D" uid="uid://crmoj5475vt74" path="res://assets/images/icons/field.png" id="9_xr45o"]
+[ext_resource type="Texture2D" uid="uid://df0qntta6dka8" path="res://assets/images/icons/knapsack.png" id="10_xhwmi"]
 
 [sub_resource type="Animation" id="Animation_yh4fe"]
 length = 0.001
@@ -625,7 +632,7 @@ autoplay = "idle_forward"
 next/dig_backward = &"dig_backward"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+zoom = Vector2(4, 4)
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 drag_left_margin = 0.05
@@ -642,3 +649,98 @@ shape = SubResource("CircleShape2D_btq83")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SmooshArea"]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_k7k0f")
+
+[node name="InventoryStacked" type="Node" parent="."]
+script = ExtResource("4_on7ey")
+capacity = 150.0
+item_protoset = ExtResource("5_efqqm")
+
+[node name="_Node_90367" type="Node" parent="InventoryStacked"]
+script = ExtResource("6_3h0h3")
+protoset = ExtResource("5_efqqm")
+prototype_id = "poplar_log_f"
+properties = {
+"stack_size": 5
+}
+
+[node name="CanvasLayerUI" type="CanvasLayer" parent="."]
+
+[node name="ViewableContainer" type="Control" parent="CanvasLayerUI"]
+layout_mode = 3
+anchor_left = 0.1
+anchor_top = 0.15
+anchor_right = 0.9
+anchor_bottom = 0.8
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayerUI/ViewableContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayerUI/ViewableContainer/VBoxContainer"]
+layout_mode = 2
+text = "Familiar Inventory"
+
+[node name="PlayerInventoryView" type="Control" parent="CanvasLayerUI/ViewableContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("7_6j05k")
+inventory_path = NodePath("../../../../InventoryStacked")
+
+[node name="BottomBar" type="Control" parent="CanvasLayerUI"]
+clip_contents = true
+layout_mode = 3
+anchor_top = 0.8
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayerUI/BottomBar"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -128.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="BarnTextureButton" type="TextureButton" parent="CanvasLayerUI/BottomBar/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture_normal = ExtResource("8_uus6j")
+texture_pressed = ExtResource("8_uus6j")
+texture_hover = ExtResource("8_uus6j")
+texture_focused = ExtResource("8_uus6j")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="FieldTextureButton" type="TextureButton" parent="CanvasLayerUI/BottomBar/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture_normal = ExtResource("9_xr45o")
+texture_pressed = ExtResource("9_xr45o")
+texture_hover = ExtResource("9_xr45o")
+texture_focused = ExtResource("9_xr45o")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="KnapsackTextureButton" type="TextureButton" parent="CanvasLayerUI/BottomBar/HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture_normal = ExtResource("10_xhwmi")
+texture_pressed = ExtResource("10_xhwmi")
+texture_hover = ExtResource("10_xhwmi")
+texture_focused = ExtResource("10_xhwmi")
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="pressed" from="CanvasLayerUI/BottomBar/HBoxContainer/BarnTextureButton" to="." method="_on_barn_texture_button_pressed"]
+[connection signal="pressed" from="CanvasLayerUI/BottomBar/HBoxContainer/FieldTextureButton" to="." method="_on_field_texture_button_pressed"]
+[connection signal="pressed" from="CanvasLayerUI/BottomBar/HBoxContainer/KnapsackTextureButton" to="." method="_on_knapsack_texture_button_pressed"]

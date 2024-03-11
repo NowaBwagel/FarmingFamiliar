@@ -18,11 +18,12 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
+window/size/viewport_width=720
+window/size/viewport_height=1280
 window/size/mode=2
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_width"
+window/handheld/orientation=1
 
 [editor]
 
@@ -30,7 +31,12 @@ movie_writer/movie_file="X:/_Documents/Godot Assignments/SproutLands/movie.avi"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/admob/plugin.cfg")
+enabled=PackedStringArray("res://addons/Todo_Manager/plugin.cfg", "res://addons/admob/plugin.cfg", "res://addons/gloot/plugin.cfg")
+
+[gui]
+
+theme/default_theme_scale=2.0
+theme/default_font_multichannel_signed_distance_field=true
 
 [input]
 

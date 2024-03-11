@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://desig2rcvbrck"]
+
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_stacked.gd" id="3_xpc51"]
+[ext_resource type="Resource" uid="uid://cd4ugbfb0pf4d" path="res://assets/resources/farming_farmiliar_item_protoset.tres" id="4_jk5o6"]
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="5_nawge"]
+[ext_resource type="Texture2D" uid="uid://c8svwxj7fxv2i" path="res://assets/images/Simple Farm Packv12-export-export.png" id="6_irkb1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07tw8"]
+size = Vector2(80, 34)
+
+[node name="Warehouse" type="StaticBody2D"]
+z_index = 5
+y_sort_enabled = true
+
+[node name="InventoryStacked" type="Node" parent="."]
+script = ExtResource("3_xpc51")
+capacity = 250.0
+item_protoset = ExtResource("4_jk5o6")
+
+[node name="_Node_26442" type="Node" parent="InventoryStacked"]
+script = ExtResource("5_nawge")
+protoset = ExtResource("4_jk5o6")
+prototype_id = "poplar_log_f"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -40)
+texture = ExtResource("6_irkb1")
+region_enabled = true
+region_rect = Rect2(320, 400, 80, 80)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_07tw8")

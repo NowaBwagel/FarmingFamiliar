@@ -28,6 +28,7 @@ func actor_setup():
 
 func set_movement_target(movement_target:Vector2) ->void:
 	navigation_agent_2d.target_position = movement_target
+	#TODO: Clear Nearby actions.
 
 func _unhandled_input(event):
 	if (event is InputEventScreenTouch and event.pressed):
@@ -48,6 +49,7 @@ func _physics_process(delta):
 		if navigation_agent_2d.is_navigation_finished():
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			velocity.y = move_toward(velocity.y, 0, SPEED)
+			#TODO: Update Nearby actions.
 		else:
 			var current_agent_position: Vector2 = global_position
 			var next_path_position: Vector2 = navigation_agent_2d.get_next_path_position()
@@ -105,3 +107,15 @@ func _update_animation_state()->void:
 				animation_player.play("idle_left")
 			Facing.RIGHT:
 				animation_player.play("idle_right")
+
+
+func _on_barn_texture_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_field_texture_button_pressed():
+	pass # Replace with function body.
+
+
+func _on_knapsack_texture_button_pressed():
+	$CanvasLayerUI/ViewableContainer.visible = !$CanvasLayerUI/ViewableContainer.visible

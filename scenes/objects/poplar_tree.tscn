@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://brsuccv6f13ug"]
+[gd_scene load_steps=14 format=3 uid="uid://brsuccv6f13ug"]
 
 [ext_resource type="Texture2D" uid="uid://cn4i1yw4lc34e" path="res://assets/images/Basic_Grass_Biom_things.png" id="1_1wndj"]
 [ext_resource type="Script" path="res://scripts/poplar_tree.gd" id="1_i10fn"]
@@ -6,6 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://t7eixast1eb" path="res://assets/audio/amb_bird_1.ogg" id="4_06a8i"]
 [ext_resource type="AudioStream" uid="uid://byqs8n5l0qxfi" path="res://assets/audio/amb_cricket_1.ogg" id="6_526dq"]
 [ext_resource type="AudioStream" uid="uid://bfsot7lu4vfx6" path="res://assets/audio/amb_frog_1.ogg" id="7_5d63w"]
+[ext_resource type="PackedScene" uid="uid://e77npehqsr7e" path="res://scenes/nodes/collectable_radius.tscn" id="7_xef20"]
+[ext_resource type="Script" path="res://scripts/Collectable.gd" id="8_w0le3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u8im0"]
 radius = 8.0
@@ -40,6 +42,8 @@ atlas = ExtResource("1_1wndj")
 region = Rect2(80, 16, 16, 16)
 
 [node name="PoplarTree" type="StaticBody2D"]
+z_index = 1
+y_sort_enabled = true
 script = ExtResource("1_i10fn")
 metadata/_edit_group_ = true
 
@@ -70,3 +74,19 @@ explosiveness = 0.65
 visibility_rect = Rect2(-50, -50, 100, 75)
 trail_sections = 2
 trail_section_subdivisions = 1
+
+[node name="Collectable" type="Node" parent="." node_paths=PackedStringArray("collectable_radius", "harvest_ready_icon")]
+script = ExtResource("8_w0le3")
+collectable_radius = NodePath("CollectableRadius")
+harvest_ready_icon = NodePath("../HarvestReadyIcon")
+
+[node name="CollectableRadius" parent="Collectable" instance=ExtResource("7_xef20")]
+monitoring = false
+
+[node name="HarvestReadyIcon" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(0, -8)
+texture = ExtResource("1_1wndj")
+region_enabled = true
+region_rect = Rect2(80, 32, 16, 16)

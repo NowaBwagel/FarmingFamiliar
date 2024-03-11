@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemProtoset" load_steps=2 format=3 uid="uid://cd4ugbfb0pf4d"]
+
+[ext_resource type="Script" path="res://addons/gloot/core/item_protoset.gd" id="1_2hi0d"]
+
+[resource]
+script = ExtResource("1_2hi0d")
+json_data = "[
+    {
+        \"id\": \"poplar_log_f\",
+        \"image\": \"res://assets/images/icons/log.png\",
+        \"name\": \"Rank F Poplar Log\",
+        \"stack_size\": \"10\",
+        \"weight\": 5
+    }
+]"
