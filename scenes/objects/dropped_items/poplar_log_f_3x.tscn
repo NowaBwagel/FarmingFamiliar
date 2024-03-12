@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://28k1xdd1qgak"]
+
+[ext_resource type="Script" path="res://addons/gloot/core/inventory_item.gd" id="1_2iup2"]
+[ext_resource type="Resource" uid="uid://cd4ugbfb0pf4d" path="res://assets/resources/farming_farmiliar_item_protoset.tres" id="2_i3pbm"]
+
+[node name="InventoryItem" type="Node"]
+script = ExtResource("1_2iup2")
+protoset = ExtResource("2_i3pbm")
+prototype_id = "poplar_log_f"
+properties = {
+"stack_size": 3
+}

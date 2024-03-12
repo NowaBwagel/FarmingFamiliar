@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b3rxt8gwjpb82"]
+[gd_scene load_steps=26 format=3 uid="uid://b3rxt8gwjpb82"]
 
 [ext_resource type="Texture2D" uid="uid://cumr1euxsv1wx" path="res://assets/images/Basic Charakter Spritesheet.png" id="1_31bkd"]
 [ext_resource type="Script" path="res://scripts/player_familiar.gd" id="1_a65e8"]
@@ -599,6 +599,8 @@ radius = 4.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7k0f"]
 size = Vector2(6, 8)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_w4dph"]
+
 [node name="PlayerFamiliar" type="CharacterBody2D"]
 z_index = 1
 y_sort_enabled = true
@@ -741,6 +743,12 @@ texture_focused = ExtResource("10_xhwmi")
 ignore_texture_size = true
 stretch_mode = 5
 
+[node name="PickupArea2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickupArea2D"]
+shape = SubResource("CircleShape2D_w4dph")
+
 [connection signal="pressed" from="CanvasLayerUI/BottomBar/HBoxContainer/BarnTextureButton" to="." method="_on_barn_texture_button_pressed"]
 [connection signal="pressed" from="CanvasLayerUI/BottomBar/HBoxContainer/FieldTextureButton" to="." method="_on_field_texture_button_pressed"]
 [connection signal="pressed" from="CanvasLayerUI/BottomBar/HBoxContainer/KnapsackTextureButton" to="." method="_on_knapsack_texture_button_pressed"]
+[connection signal="area_entered" from="PickupArea2D" to="." method="_on_pickup_area_2d_area_entered"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkn52j2h7ghgm"]
+
+[ext_resource type="Script" path="res://scripts/DroppedItem.gd" id="1_4jbl4"]
+[ext_resource type="Resource" uid="uid://cd4ugbfb0pf4d" path="res://assets/resources/farming_farmiliar_item_protoset.tres" id="2_rk7bk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5pols"]
+
+[node name="DroppedItem" type="Area2D"]
+script = ExtResource("1_4jbl4")
+item_protoset = ExtResource("2_rk7bk")
+item_id = "poplar_log_f"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5pols")

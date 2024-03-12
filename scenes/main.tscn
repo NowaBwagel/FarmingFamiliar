@@ -1,14 +1,17 @@
-[gd_scene load_steps=12 format=3 uid="uid://dmnvkp7u4wnte"]
+[gd_scene load_steps=15 format=3 uid="uid://dmnvkp7u4wnte"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_0j8gr"]
 [ext_resource type="PackedScene" uid="uid://dnwsajce0egc3" path="res://scenes/tile_map.tscn" id="1_d8j1v"]
 [ext_resource type="PackedScene" uid="uid://b3rxt8gwjpb82" path="res://scenes/entity/player_familiar.tscn" id="2_1t0m0"]
+[ext_resource type="PackedScene" uid="uid://bdn7p5jfvkbvc" path="res://scenes/world.tscn" id="2_e4d8r"]
 [ext_resource type="PackedScene" uid="uid://doa3dwss0bg03" path="res://scenes/objects/sun_iris.tscn" id="3_bme5o"]
 [ext_resource type="PackedScene" uid="uid://clj3wlvdu47ol" path="res://scenes/objects/ruby_globule.tscn" id="4_8k5di"]
 [ext_resource type="PackedScene" uid="uid://brsuccv6f13ug" path="res://scenes/objects/poplar_tree.tscn" id="5_1ifuj"]
 [ext_resource type="PackedScene" uid="uid://d4bf4nh5i4530" path="res://scenes/objects/grass.tscn" id="6_jd5sj"]
 [ext_resource type="PackedScene" uid="uid://ch5u02n8bwtth" path="res://scenes/water_plane.tscn" id="7_b4b7m"]
 [ext_resource type="PackedScene" uid="uid://desig2rcvbrck" path="res://scenes/objects/warehouse.tscn" id="9_eqh7i"]
+[ext_resource type="PackedScene" uid="uid://dkn52j2h7ghgm" path="res://scenes/objects/dropped_item.tscn" id="10_xupv3"]
+[ext_resource type="PackedScene" uid="uid://fqrmu6u6rvcc" path="res://scenes/growing_zone.tscn" id="12_ra7kj"]
 
 [sub_resource type="GDScript" id="GDScript_wi75k"]
 script/source = "extends Node2D
@@ -34,6 +37,8 @@ agent_radius = 8.0
 script = ExtResource("1_0j8gr")
 player_warehouse = NodePath("Objects/Warehouse")
 
+[node name="World" parent="." instance=ExtResource("2_e4d8r")]
+
 [node name="WaterPlane" parent="." node_paths=PackedStringArray("node_to_follow") instance=ExtResource("7_b4b7m")]
 z_index = -1
 position = Vector2(-8, 32)
@@ -49,6 +54,7 @@ navigation_polygon = SubResource("NavigationPolygon_6v412")
 y_sort_enabled = true
 
 [node name="PlayerFamiliar" parent="Objects" instance=ExtResource("2_1t0m0")]
+position = Vector2(-64, -19)
 
 [node name="Sun Iris3" parent="Objects" instance=ExtResource("3_bme5o")]
 y_sort_enabled = true
@@ -82,25 +88,29 @@ position = Vector2(80, -24)
 [node name="Warehouse" parent="Objects" instance=ExtResource("9_eqh7i")]
 position = Vector2(136, 8)
 
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Grass" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-84, 88)
 
-[node name="Grass2" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass2" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-71, 82)
 
-[node name="Grass7" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass7" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-75, 88)
 
-[node name="Grass8" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass8" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-72, 95)
 
-[node name="Grass3" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass3" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-66, 87)
 
-[node name="Grass5" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass5" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-82, 94)
 
-[node name="Grass6" parent="Node2D" instance=ExtResource("6_jd5sj")]
+[node name="Grass6" parent="Objects" instance=ExtResource("6_jd5sj")]
 position = Vector2(-81, 83)
+
+[node name="DroppedItem" parent="." instance=ExtResource("10_xupv3")]
+position = Vector2(-37, 29)
+
+[node name="GrowingZone" parent="." instance=ExtResource("12_ra7kj")]
+position = Vector2(88, 40)

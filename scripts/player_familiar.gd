@@ -14,6 +14,10 @@ var gravity_vector = ProjectSettings.get_setting("physics/2d/default_gravity_vec
 var current_facing :Facing = Facing.FORWARD
 var navigation_movement:bool
 
+
+#start player stats
+@export var reach: int = 24
+
 func _ready():
 	navigation_agent_2d.max_speed = SPEED
 	navigation_agent_2d.velocity_computed.connect(_safe_velocity_computed)
@@ -43,6 +47,10 @@ func _unhandled_input(event):
 func _input(event):
 	if Input.is_action_just_pressed("move_backward") or Input.is_action_just_pressed("move_forward") or Input.is_action_just_pressed("move_left") or Input.is_action_just_pressed("move_right"):
 		navigation_movement = false
+
+func _process(delta):
+	if GlobalSelect.picked_node:
+		_check_picked_node_for_collection()
 
 func _physics_process(delta):
 	if navigation_movement:
@@ -109,6 +117,15 @@ func _update_animation_state()->void:
 				animation_player.play("idle_right")
 
 
+func _check_picked_node_for_collection()->void:
+	var picked_node = GlobalSelect.picked_node
+	var distance_to: int = int(GlobalSelect.picked_node.get_parent().global_position.distance_to(global_position))
+	if distance_to <= reach:
+		print("I can reach it")
+		if picked_node is Collectable:
+			picked_node._on_harvest()
+		GlobalSelect.picked_node = null
+
 func _on_barn_texture_button_pressed():
 	pass # Replace with function body.
 
@@ -119,3 +136,10 @@ func _on_field_texture_button_pressed():
 
 func _on_knapsack_texture_button_pressed():
 	$CanvasLayerUI/ViewableContainer.visible = !$CanvasLayerUI/ViewableContainer.visible
+
+
+func _on_pickup_area_2d_area_entered(area):
+	if area.has_method("_take_item"):
+		print("can take item")
+		$InventoryStacked.add_item_automerge(area._take_item())
+		area.queue_free()
