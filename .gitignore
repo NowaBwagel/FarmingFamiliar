@@ -16,7 +16,5 @@ mono_crash.*.json
 android/build/build/*
 android/build/res/*
 android/build/assets/*
-android/*/.gradle
-android/build/gradle
 android/build/libs
 android/build/src
