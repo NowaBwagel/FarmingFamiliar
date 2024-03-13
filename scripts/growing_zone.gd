@@ -1,6 +1,8 @@
 @tool
 extends Node2D
 
+const PLANTING_SPOT = preload("res://scenes/planting_spot.tscn")
+
 @export var tiling_size: int = 16
 @export var width: int = 2
 @export var height: int = 5
@@ -12,8 +14,8 @@ func _ready():
 		child.queue_free()
 	for x in range(width):
 		for y in range(height):
-			var marker: Marker2D = Marker2D.new()
-			add_child(marker)
-			marker.position.x = tiling_size * x
-			marker.position.y = tiling_size * y
+			var planting_spot = PLANTING_SPOT.instantiate()
+			add_child(planting_spot)
+			planting_spot.position.x = tiling_size * x
+			planting_spot.position.y = tiling_size * y
 

@@ -16,3 +16,4 @@ mono_crash.*.json
 *.aar
 *.so
 *.apk
+/android/build

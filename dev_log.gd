@@ -1,5 +1,8 @@
 extends Node
 
+#TODO: Currently adding plating spots and growing zones.
+# player can get all growing zones for assigning seesd.
+
 #TODO: Bottom Bar: Show Warehouse storage, Show player Storage, Go To Farm
 #TODO: Saving and loading
 #TODO: Planting mechanics: Allow players to interact with designated plots of land to plant seeds and grow crops.

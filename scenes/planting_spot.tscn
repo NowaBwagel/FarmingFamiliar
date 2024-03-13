@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://5sqwvr5xydth"]
+
+[ext_resource type="Script" path="res://scripts/planting_spot.gd" id="1_bqqu6"]
+
+[node name="PlantingSpot" type="Node2D" groups=["planting_spot"]]
+script = ExtResource("1_bqqu6")
+
+[node name="Marker2D" type="Marker2D" parent="."]

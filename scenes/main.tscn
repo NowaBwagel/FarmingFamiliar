@@ -113,4 +113,6 @@ position = Vector2(-81, 83)
 position = Vector2(-37, 29)
 
 [node name="GrowingZone" parent="." instance=ExtResource("12_ra7kj")]
-position = Vector2(88, 40)
+position = Vector2(96, 48)
+width = 1
+height = 3
