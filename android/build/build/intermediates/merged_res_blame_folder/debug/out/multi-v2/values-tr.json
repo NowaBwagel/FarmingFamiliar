@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-tr/values-tr.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-tr/values-tr.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-tr\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "62",
+                        "endOffsets": "173"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "2725",
+                        "endColumns": "65",
+                        "endOffsets": "2786"
+                    }
+                },
                 {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\0e628cf47af6527003ab8a0aef8cdcd5\\transformed\\jetified-play-services-base-18.0.0\\res\\values-tr\\values.xml",
                     "from": {
@@ -38,23 +55,6 @@
                     }
                 },
                 {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-tr\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "2725",
-                        "endColumns": "70",
-                        "endOffsets": "2791"
-                    }
-                },
-                {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\4b1271ea82deb3a856a6d71030563e6d\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-tr\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -83,9 +83,9 @@
                     "to": {
                         "startLines": "45",
                         "startColumns": "4",
-                        "startOffsets": "4283",
+                        "startOffsets": "4278",
                         "endColumns": "100",
-                        "endOffsets": "4379"
+                        "endOffsets": "4374"
                     }
                 },
                 {
@@ -100,9 +100,9 @@
                     "to": {
                         "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2796,2842,2893,2954,3024,3096,3212,3293,3411,3468,3598,3655,3780,3876,3920,4015,4055,4093,4149,4239,4384",
+                        "startOffsets": "2791,2837,2888,2949,3019,3091,3207,3288,3406,3463,3593,3650,3775,3871,3915,4010,4050,4088,4144,4234,4379",
                         "endColumns": "45,50,60,69,71,115,80,117,56,129,56,124,95,43,94,39,37,55,89,43,59",
-                        "endOffsets": "2837,2888,2949,3019,3091,3207,3288,3406,3463,3593,3650,3775,3871,3915,4010,4050,4088,4144,4234,4278,4439"
+                        "endOffsets": "2832,2883,2944,3014,3086,3202,3283,3401,3458,3588,3645,3770,3866,3910,4005,4045,4083,4139,4229,4273,4434"
                     }
                 }
             ]

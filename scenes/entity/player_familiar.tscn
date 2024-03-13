@@ -668,6 +668,7 @@ properties = {
 [node name="CanvasLayerUI" type="CanvasLayer" parent="."]
 
 [node name="ViewableContainer" type="Control" parent="CanvasLayerUI"]
+visible = false
 layout_mode = 3
 anchor_left = 0.1
 anchor_top = 0.15

@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-en/values-en.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-en\\godot_project_name_string.xml",
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-en\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",
                         "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
+                        "endColumns": "62",
+                        "endOffsets": "173"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "70",
-                        "endOffsets": "121"
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

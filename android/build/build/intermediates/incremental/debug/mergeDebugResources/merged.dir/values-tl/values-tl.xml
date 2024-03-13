@@ -22,7 +22,7 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopyahin ang link"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Buksan sa browser"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Ibahagi ang link"</string>
-    <string name="godot_project_name_string">Farming Familiar</string>
+    <string name="godot_project_name_string">SproutLands</string>
     <string name="native_body">Nilalaman</string>
     <string name="native_headline">Headline</string>
     <string name="native_media_view">View ng Media</string>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-fi/values-fi.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\0e628cf47af6527003ab8a0aef8cdcd5\\transformed\\jetified-play-services-base-18.0.0\\res\\values-fi\\values.xml",
@@ -66,26 +66,9 @@
                     "to": {
                         "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2709,2759,2811,2869,2936,3007,3103,3183,3294,3348,3473,3534,3656,3753,3798,3888,3927,3965,4019,4108,4252",
+                        "startOffsets": "2704,2754,2806,2864,2931,3002,3098,3178,3289,3343,3468,3529,3651,3748,3793,3883,3922,3960,4014,4103,4247",
                         "endColumns": "49,51,57,66,70,95,79,110,53,124,60,121,96,44,89,38,37,53,88,42,59",
-                        "endOffsets": "2754,2806,2864,2931,3002,3098,3178,3289,3343,3468,3529,3651,3748,3793,3883,3922,3960,4014,4103,4146,4307"
-                    }
-                },
-                {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-fi\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "2638",
-                        "endColumns": "70",
-                        "endOffsets": "2704"
+                        "endOffsets": "2749,2801,2859,2926,2997,3093,3173,3284,3338,3463,3524,3646,3743,3788,3878,3917,3955,4009,4098,4141,4302"
                     }
                 },
                 {
@@ -100,9 +83,26 @@
                     "to": {
                         "startLines": "45",
                         "startColumns": "4",
-                        "startOffsets": "4151",
+                        "startOffsets": "4146",
                         "endColumns": "100",
-                        "endOffsets": "4247"
+                        "endOffsets": "4242"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-fi\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "62",
+                        "endOffsets": "173"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "2638",
+                        "endColumns": "65",
+                        "endOffsets": "2699"
                     }
                 }
             ]

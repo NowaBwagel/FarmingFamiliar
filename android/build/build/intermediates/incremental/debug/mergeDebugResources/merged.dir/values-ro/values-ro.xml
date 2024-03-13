@@ -22,7 +22,7 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiați linkul"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Deschideți în browser"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Trimiteți linkul"</string>
-    <string name="godot_project_name_string">Farming Familiar</string>
+    <string name="godot_project_name_string">SproutLands</string>
     <string name="native_body">Conținut</string>
     <string name="native_headline">Titlu</string>
     <string name="native_media_view">Afișarea fișierului media</string>

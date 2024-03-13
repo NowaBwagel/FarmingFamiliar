@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\4b1271ea82deb3a856a6d71030563e6d\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-zh-rTW\\values.xml",
@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-zh-rTW\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "62",
+                        "endOffsets": "173"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "2244",
+                        "endColumns": "65",
+                        "endOffsets": "2305"
+                    }
+                },
+                {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\35f4a948deebfe6e56a5492680c1f66f\\transformed\\core-1.8.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2",
@@ -49,26 +66,9 @@
                     "to": {
                         "startLines": "45",
                         "startColumns": "4",
-                        "startOffsets": "3391",
+                        "startOffsets": "3386",
                         "endColumns": "100",
-                        "endOffsets": "3487"
-                    }
-                },
-                {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-zh-rTW\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "2244",
-                        "endColumns": "70",
-                        "endOffsets": "2310"
+                        "endOffsets": "3482"
                     }
                 },
                 {
@@ -100,9 +100,9 @@
                     "to": {
                         "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2315,2358,2405,2456,2520,2585,2659,2722,2790,2844,2922,2980,3053,3119,3155,3204,3238,3272,3310,3355,3492",
+                        "startOffsets": "2310,2353,2400,2451,2515,2580,2654,2717,2785,2839,2917,2975,3048,3114,3150,3199,3233,3267,3305,3350,3487",
                         "endColumns": "42,46,50,63,64,73,62,67,53,77,57,72,65,35,48,33,33,37,44,35,59",
-                        "endOffsets": "2353,2400,2451,2515,2580,2654,2717,2785,2839,2917,2975,3048,3114,3150,3199,3233,3267,3305,3350,3386,3547"
+                        "endOffsets": "2348,2395,2446,2510,2575,2649,2712,2780,2834,2912,2970,3043,3109,3145,3194,3228,3262,3300,3345,3381,3542"
                     }
                 }
             ]

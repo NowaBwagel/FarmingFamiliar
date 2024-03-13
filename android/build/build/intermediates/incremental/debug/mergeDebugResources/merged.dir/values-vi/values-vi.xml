@@ -22,7 +22,7 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Sao chép đường liên kết"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Mở trong trình duyệt"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Chia sẻ liên kết"</string>
-    <string name="godot_project_name_string">Farming Familiar</string>
+    <string name="godot_project_name_string">SproutLands</string>
     <string name="native_body">Nội dung</string>
     <string name="native_headline">Tiêu đề</string>
     <string name="native_media_view">Nội dung nghe nhìn</string>

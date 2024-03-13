@@ -132,7 +132,7 @@
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
-    <string name="godot_project_name_string">Farming Familiar</string>
+    <string name="godot_project_name_string">SproutLands</string>
     <string name="kilobytes_per_second">%1$s KB/s</string>
     <string description="This string appears within a window that describes an ad&apos;s contents. It indicates that the following text would be the body field (textual content) of the native ad. [CHAR_LIMIT=NONE]" name="native_body">
     Body

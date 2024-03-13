@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-sv/values-sv.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-sv\\godot_project_name_string.xml",
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-sv\\godot_project_name_string.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "1",
                         "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
+                        "endColumns": "62",
+                        "endOffsets": "173"
                     },
                     "to": {
                         "startLines": "24",
                         "startColumns": "4",
                         "startOffsets": "2672",
-                        "endColumns": "70",
-                        "endOffsets": "2738"
+                        "endColumns": "65",
+                        "endOffsets": "2733"
                     }
                 },
                 {
@@ -49,9 +49,9 @@
                     "to": {
                         "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2743,2792,2843,2902,2970,3043,3149,3232,3333,3387,3497,3557,3672,3759,3801,3888,3927,3971,4025,4109,4252",
+                        "startOffsets": "2738,2787,2838,2897,2965,3038,3144,3227,3328,3382,3492,3552,3667,3754,3796,3883,3922,3966,4020,4104,4247",
                         "endColumns": "48,50,58,67,72,105,82,100,53,109,59,114,86,41,86,38,43,53,83,41,59",
-                        "endOffsets": "2787,2838,2897,2965,3038,3144,3227,3328,3382,3492,3552,3667,3754,3796,3883,3922,3966,4020,4104,4146,4307"
+                        "endOffsets": "2782,2833,2892,2960,3033,3139,3222,3323,3377,3487,3547,3662,3749,3791,3878,3917,3961,4015,4099,4141,4302"
                     }
                 },
                 {
@@ -100,9 +100,9 @@
                     "to": {
                         "startLines": "45",
                         "startColumns": "4",
-                        "startOffsets": "4151",
+                        "startOffsets": "4146",
                         "endColumns": "100",
-                        "endOffsets": "4247"
+                        "endOffsets": "4242"
                     }
                 }
             ]

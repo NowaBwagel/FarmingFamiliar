@@ -6,7 +6,7 @@ extends Node2D
 func _ready():
 	MobileAds.initialize()
 	
-	await get_tree().physics_frame
+	#await get_tree().physics_frame
 	_on_load_banner_pressed()
 
 var _banner_ad_view : AdView

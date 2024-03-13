@@ -6,8 +6,9 @@ extends Node2D
 func _ready():
 	MobileAds.initialize()
 	
-	#await get_tree().physics_frame
-	#_on_load_banner_pressed()
+	_on_load_banner_pressed()
+	await get_tree().physics_frame
+	Dialogic.start(load("res://assets/dialogic/timeline_test.dtl"))
 
 var _banner_ad_view : AdView
 func destroy_banner_ad_view():

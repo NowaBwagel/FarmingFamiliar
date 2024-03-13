@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-nl/values-nl.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\4b1271ea82deb3a856a6d71030563e6d\\transformed\\jetified-play-services-basement-18.0.0\\res\\values-nl\\values.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "1080",
                         "endColumns": "142",
                         "endOffsets": "1218"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-nl\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "62",
+                        "endOffsets": "173"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "2771",
+                        "endColumns": "65",
+                        "endOffsets": "2832"
                     }
                 },
                 {
@@ -49,26 +66,9 @@
                     "to": {
                         "startLines": "45",
                         "startColumns": "4",
-                        "startOffsets": "4310",
+                        "startOffsets": "4305",
                         "endColumns": "100",
-                        "endOffsets": "4406"
-                    }
-                },
-                {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-nl\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "2771",
-                        "endColumns": "70",
-                        "endOffsets": "2837"
+                        "endOffsets": "4401"
                     }
                 },
                 {
@@ -83,9 +83,9 @@
                     "to": {
                         "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2842,2896,2944,3003,3073,3148,3247,3330,3452,3506,3620,3684,3807,3899,3949,4043,4085,4125,4178,4263,4411",
+                        "startOffsets": "2837,2891,2939,2998,3068,3143,3242,3325,3447,3501,3615,3679,3802,3894,3944,4038,4080,4120,4173,4258,4406",
                         "endColumns": "53,47,58,69,74,98,82,121,53,113,63,122,91,49,93,41,39,52,84,46,59",
-                        "endOffsets": "2891,2939,2998,3068,3143,3242,3325,3447,3501,3615,3679,3802,3894,3944,4038,4080,4120,4173,4258,4305,4466"
+                        "endOffsets": "2886,2934,2993,3063,3138,3237,3320,3442,3496,3610,3674,3797,3889,3939,4033,4075,4115,4168,4253,4300,4461"
                     }
                 },
                 {

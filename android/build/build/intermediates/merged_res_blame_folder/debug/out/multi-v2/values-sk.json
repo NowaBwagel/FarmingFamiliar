@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.godot.game-mergeDebugResources-3:/values-sk/values-sk.xml",
+            "outputFile": "com.godot.game-mergeDebugResources-20:/values-sk/values-sk.xml",
             "map": [
-                {
-                    "source": "A:\\.pc_cleanup\\Documents\\GitHubClones\\FarmingFamiliar\\android\\build\\res\\values-sk\\godot_project_name_string.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "1",
-                        "startOffsets": "112",
-                        "endColumns": "67",
-                        "endOffsets": "178"
-                    },
-                    "to": {
-                        "startLines": "24",
-                        "startColumns": "4",
-                        "startOffsets": "2749",
-                        "endColumns": "70",
-                        "endOffsets": "2815"
-                    }
-                },
                 {
                     "source": "C:\\Users\\noahb\\.gradle\\caches\\transforms-3\\35f4a948deebfe6e56a5492680c1f66f\\transformed\\core-1.8.0\\res\\values-sk\\values-sk.xml",
                     "from": {
@@ -32,9 +15,26 @@
                     "to": {
                         "startLines": "45",
                         "startColumns": "4",
-                        "startOffsets": "4257",
+                        "startOffsets": "4252",
                         "endColumns": "100",
-                        "endOffsets": "4353"
+                        "endOffsets": "4348"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\noahb\\Documents\\Git\\FarmingFarmiliar\\android\\build\\res\\values-sk\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "62",
+                        "endOffsets": "173"
+                    },
+                    "to": {
+                        "startLines": "24",
+                        "startColumns": "4",
+                        "startOffsets": "2749",
+                        "endColumns": "65",
+                        "endOffsets": "2810"
                     }
                 },
                 {
@@ -49,9 +49,9 @@
                     "to": {
                         "startLines": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2820,2865,2916,2979,3048,3119,3229,3309,3420,3474,3597,3661,3764,3857,3905,3988,4026,4067,4130,4207,4358",
+                        "startOffsets": "2815,2860,2911,2974,3043,3114,3224,3304,3415,3469,3592,3656,3759,3852,3900,3983,4021,4062,4125,4202,4353",
                         "endColumns": "44,50,62,68,70,109,79,110,53,122,63,102,92,47,82,37,40,62,76,49,59",
-                        "endOffsets": "2860,2911,2974,3043,3114,3224,3304,3415,3469,3592,3656,3759,3852,3900,3983,4021,4062,4125,4202,4252,4413"
+                        "endOffsets": "2855,2906,2969,3038,3109,3219,3299,3410,3464,3587,3651,3754,3847,3895,3978,4016,4057,4120,4197,4247,4408"
                     }
                 },
                 {

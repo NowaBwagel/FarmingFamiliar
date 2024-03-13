@@ -22,7 +22,7 @@
     <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"लिंक कॉपी करें"</string>
     <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ब्राउज़र में खोलें"</string>
     <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"लिंक शेयर करें"</string>
-    <string name="godot_project_name_string">Farming Familiar</string>
+    <string name="godot_project_name_string">SproutLands</string>
     <string name="native_body">मुख्य हिस्सा</string>
     <string name="native_headline">हेडलाइन</string>
     <string name="native_media_view">मीडिया व्यू</string>
